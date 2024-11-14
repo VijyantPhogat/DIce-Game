@@ -12,3 +12,4 @@
 /Users/vijyantphogat/Desktop/c sharp/dice game/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.pdb
 /Users/vijyantphogat/Desktop/c sharp/dice game/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.genruntimeconfig.cache
 /Users/vijyantphogat/Desktop/c sharp/dice game/ConsoleApp1/obj/Debug/net8.0/ref/ConsoleApp1.dll
+/Users/vijyantphogat/Desktop/c sharp/dice game/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.sourcelink.json

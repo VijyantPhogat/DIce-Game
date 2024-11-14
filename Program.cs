@@ -1,66 +1,61 @@
-﻿using System;
-
-namespace Dice_Game
+﻿namespace Dice_Game
 {
     class program{
         static void Main(string[] args){
-            
-            int playerRandomNum;
-            int enemyRandomNum;
 
-            int playerscore=0;
-            int enemyscore=0;
+            var playerscore=0;
+            var enemyscore=0;
 
             Random random= new Random();
 
-            for(int i = 0; i < 10; i++){
-             System.Console.WriteLine(" ");
-            System.Console.WriteLine("Press any key to roll the dice : ");
-            Console.ReadKey();
-            playerRandomNum = random.Next(1, 7);
-            System.Console.WriteLine($"You rolled a {playerRandomNum}");
+            for(int i = 0; i < 10; i++){ 
+                Console.WriteLine(" ");
+                Console.WriteLine("Press any key to roll the dice : ");
+                Console.ReadKey();
+                var playerRandomNum = random.Next(1, 7);
+                Console.WriteLine($"You rolled a {playerRandomNum}");
 
-            Console.WriteLine("...");
-            System.Threading.Thread.Sleep(1000);
+                Console.WriteLine("...");
+                Thread.Sleep(1000);
 
-            enemyRandomNum = random.Next(1,7);
-            System.Console.WriteLine($"Enemy rolled a {enemyRandomNum}");
+                var enemyRandomNum = random.Next(1,7);
+                Console.WriteLine($"Enemy rolled a {enemyRandomNum}");
 
             if(playerRandomNum > enemyRandomNum){
                 playerscore++;
-            System.Console.WriteLine(" ");
-                System.Console.WriteLine("Player won this round !");
-            System.Console.WriteLine("++++++++++++++++++++++++");
-            System.Console.WriteLine(" ");
+                Console.WriteLine(" ");
+                Console.WriteLine("Player won this round !");
+                Console.WriteLine("++++++++++++++++++++++++");
+                Console.WriteLine(" ");
             }
             else if(enemyRandomNum > playerRandomNum){
                 enemyscore++;
-            System.Console.WriteLine(" ");
-                System.Console.WriteLine("Enemy won this round !");
-            System.Console.WriteLine("++++++++++++++++++++++++");
-            System.Console.WriteLine(" ");
+                Console.WriteLine(" ");
+                Console.WriteLine("Enemy won this round !");
+                Console.WriteLine("++++++++++++++++++++++++");
+                Console.WriteLine(" ");
             }
             else{
-            System.Console.WriteLine(" ");
-                System.Console.WriteLine(" Round is draw !!! ");
-            System.Console.WriteLine("++++++++++++++++++++++++");
-            System.Console.WriteLine(" ");
+                Console.WriteLine(" ");
+                Console.WriteLine(" Round is draw !!! ");
+                Console.WriteLine("++++++++++++++++++++++++");
+                Console.WriteLine(" ");
             }
             }
             if(playerscore > enemyscore){
-                System.Console.WriteLine("-------------------------------");
-                System.Console.WriteLine("CONGRATULATIONS, YOU WON !!!!");
-                System.Console.WriteLine("-------------------------------");
+                Console.WriteLine("-------------------------------");
+                Console.WriteLine("CONGRATULATIONS, YOU WON !!!!");
+                Console.WriteLine("-------------------------------");
             }
             else if(enemyscore>playerscore){
-                System.Console.WriteLine("-------------");
-                System.Console.WriteLine("You lost.");
-                System.Console.WriteLine("-------------");
+                Console.WriteLine("-------------");
+                Console.WriteLine("You lost.");
+                Console.WriteLine("-------------");
             }
             else {
-                System.Console.WriteLine("-------------");
-                System.Console.WriteLine("IT'S A DRAW!");
-                System.Console.WriteLine("-------------");
+                Console.WriteLine("-------------");
+                Console.WriteLine("IT'S A DRAW!");
+                Console.WriteLine("-------------");
             }
         }
     }
